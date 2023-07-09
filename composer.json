@@ -1,0 +1,23 @@
+{
+    "name": "stillat/antlers-translation-strings-exporter",
+    "autoload": {
+        "psr-4": {
+            "Stillat\\AntlersTranslationStringsExporter\\": "src"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Antlers Translation Strings Exporter",
+            "description": "Provides utilities for exporting translation strings from Antlers and Blade template files."
+        },
+        "laravel": {
+            "providers": [
+                "Stillat\\AntlersTranslationStringsExporter\\ServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "kkomelin/laravel-translatable-string-exporter": "^1.21",
+        "statamic/cms": "^4"
+    }
+}
